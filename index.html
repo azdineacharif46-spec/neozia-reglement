@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règlement Neozia City Paris</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="none"/><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.05)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .header h1 {
+            color: #fff;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .header p {
+            color: #e0e7ff;
+            font-size: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-title {
+            color: #1e3c72;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-number {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .rule {
+            background: #f8fafc;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .rule:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+
+        .rule-title {
+            color: #2d3748;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .rule-description {
+            color: #4a5568;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+
+        .warning-box strong {
+            color: #856404;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .footer {
+            background: #1e3c72;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            color: #4a5568;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏙️ NEOZIA CITY PARIS</h1>
+            <p>Règlement Officiel du Serveur</p>
+        </div>
+
+        <div class="content">
+            <div class="warning-box">
+                <strong>⚠️ Important</strong>
+                Le non-respect de ce règlement peut entraîner des sanctions allant de l'avertissement au bannissement définitif. L'ignorance du règlement ne sera pas une excuse valable.
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">1</span>
+                    Règles Générales
+                </h2>
+                <div class="rule">
+                    <div class="rule-title">1.1 - Respect et Comportement</div>
+                    <div class="rule-description">
+                        Le respect entre joueurs est primordial. Tout comportement toxique, insultes, harcèlement ou discrimination (racisme, homophobie, sexisme, etc.) est strictement interdit et sera sanctionné sévèrement.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">1.2 - Langue</div>
+                    <div class="rule-description">
+                        Le français est la langue officielle du serveur. L'utilisation d'autres langues en vocal RP ou en chat est interdite, sauf accord des parties concernées.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">1.3 - Triche et Logiciels Tiers</div>
+                    <div class="rule-description">
+                        L'utilisation de cheats, mods non autorisés, ou tout logiciel donnant un avantage déloyal est strictement interdite et entraînera un bannissement permanent.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">2</span>
+                    Règles du Roleplay
+                </h2>
+                <div class="rule">
+                    <div class="rule-title">2.1 - Powergaming (PG)</div>
+                    <div class="rule-description">
+                        Il est interdit de forcer des actions RP sur d'autres joueurs sans leur laisser la possibilité de réagir. Exemples : "/me lui prend ses clés et s'enfuit" sans attendre de réponse.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">2.2 - Metagaming (MG)</div>
+                    <div class="rule-description">
+                        L'utilisation d'informations obtenues hors RP (Discord, stream, etc.) dans le jeu est strictement interdite. Votre personnage ne peut connaître que ce qu'il a appris en RP.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">2.3 - Fear RP</div>
+                    <div class="rule-description">
+                        Vous devez jouer la peur lorsque votre vie est menacée. Si vous êtes braqué, menacé par une arme, ou en infériorité numérique, vous devez coopérer de manière réaliste.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">2.4 - Pain RP</div>
+                    <div class="rule-description">
+                        Vous devez jouer les blessures de manière réaliste. Après une chute importante, un accident ou une fusillade, votre personnage doit montrer des signes de douleur et de fatigue.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">2.5 - New Life Rule (NLR)</div>
+                    <div class="rule-description">
+                        Après une mort RP, vous ne vous souvenez de rien concernant les événements ayant mené à votre mort. Vous ne pouvez pas retourner sur la zone pendant 15 minutes.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">2.6 - Revenge Kill (RK)</div>
+                    <div class="rule-description">
+                        Il est interdit de retourner tuer quelqu'un qui vous a tué précédemment, dans le but de se venger. Respectez la NLR.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">3</span>
+                    Interactions et Combat
+                </h2>
+                <div class="rule">
+                    <div class="rule-title">3.1 - Random Deathmatch (RDM)</div>
+                    <div class="rule-description">
+                        Il est strictement interdit de tuer un joueur sans raison RP valable. Toute action violente doit être justifiée par une scène RP préalable.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">3.2 - Vehicle Deathmatch (VDM)</div>
+                    <div class="rule-description">
+                        L'utilisation d'un véhicule comme arme pour blesser ou tuer des joueurs est interdite, sauf situation RP exceptionnelle justifiée.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">3.3 - Braquages et Hold-Up</div>
+                    <div class="rule-description">
+                        Minimum 10 minutes de RP avant toute action violente. Les braquages doivent être réalistes et cohérents. Maximum 4 braqueurs contre des civils.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">3.4 - Prise d'otages</div>
+                    <div class="rule-description">
+                        Les prises d'otages doivent avoir une raison RP valable. L'otage doit être traité de manière réaliste et sa vie doit avoir de la valeur pour les preneurs d'otages.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">4</span>
+                    Véhicules et Conduite
+                </h2>
+                <div class="rule">
+                    <div class="rule-title">4.1 - Conduite Réaliste</div>
+                    <div class="rule-description">
+                        La conduite doit être réaliste. Pas de cascades inutiles, de sauts extrêmes ou de conduite suicidaire sans raison RP. Respectez le code de la route en présence de forces de l'ordre.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">4.2 - Accidents</div>
+                    <div class="rule-description">
+                        Les accidents graves doivent être joués. Un véhicule détruit doit être considéré comme inutilisable et vous devez appeler les secours.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">4.3 - Vol de Véhicules</div>
+                    <div class="rule-description">
+                        Le vol de véhicule doit être RP. Utilisez le crochetage ou autres moyens RP, pas de vol instantané. Les véhicules de service (police, EMS) ne peuvent être volés que dans des situations exceptionnelles.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">5</span>
+                    Services Publics (Police, EMS, etc.)
+                </h2>
+                <div class="rule">
+                    <div class="rule-title">5.1 - Professionnalisme</div>
+                    <div class="rule-description">
+                        Les membres des services publics doivent maintenir un haut niveau de professionnalisme et respecter leur formation et leurs procédures.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">5.2 - Corruption</div>
+                    <div class="rule-description">
+                        La corruption est autorisée mais doit être subtile et réaliste. Elle ne doit pas nuire gravement au RP des autres joueurs et doit être approuvée par le staff.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">5.3 - Zones Sécurisées</div>
+                    <div class="rule-description">
+                        Les commissariats et hôpitaux sont des zones sécurisées. Aucune action criminelle ne peut y être entreprise sans autorisation staff et raison RP majeure.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">6</span>
+                    Activités Illégales
+                </h2>
+                <div class="rule">
+                    <div class="rule-title">6.1 - Gangs et Organisations</div>
+                    <div class="rule-description">
+                        Les gangs doivent être déclarés au staff. Les guerres de gangs nécessitent une raison RP solide et l'approbation du staff.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">6.2 - Trafics</div>
+                    <div class="rule-description">
+                        Tous les trafics (drogue, armes, etc.) doivent être RPisés correctement. Les quantités et prix doivent rester cohérents avec l'économie du serveur.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">6.3 - Territoires</div>
+                    <div class="rule-description">
+                        Les conflits de territoires doivent être approuvés par le staff et respecter des horaires définis pour ne pas perturber le RP général.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">7</span>
+                    Communication
+                </h2>
+                <div class="rule">
+                    <div class="rule-title">7.1 - Vocal et Chat</div>
+                    <div class="rule-description">
+                        Utilisez un micro de qualité correcte. Le spam vocal ou textuel est interdit. Le chat /ooc doit être utilisé avec parcimonie et uniquement pour des questions techniques.
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="rule-title">7.2 - Téléphones</div>
+                    <div class="rule-description">
+                        Les appels téléphoniques doivent être RPisés. Pas d'appels en conduisant à grande vitesse ou dans des situations dangereuses sans kit mains-libres.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">8</span>
+                    Sanctions
+                </h2>
+                <div class="rule">
+                    <div class="rule-description">
+                        <strong>Les sanctions sont graduelles :</strong>
+                        <ul>
+                            <li><strong>1ère infraction mineure :</strong> Avertissement verbal</li>
+                            <li><strong>2ème infraction :</strong> Avertissement écrit + kick</li>
+                            <li><strong>3ème infraction :</strong> Ban temporaire (1-7 jours selon gravité)</li>
+                            <li><strong>Infractions graves :</strong> Ban permanent immédiat (triche, RDM répété, toxicité extrême)</li>
+                        </ul>
+                        Le staff se réserve le droit d'adapter les sanctions selon le contexte et l'historique du joueur.
+                    </div>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <strong>📋 Note Finale</strong>
+                Ce règlement peut être modifié à tout moment. Il est de votre responsabilité de vous tenir informé des mises à jour. En cas de doute, contactez le staff sur Discord.
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Neozia City Paris</strong></p>
+            <p>Bon RP à tous ! 🎭</p>
+            <p style="font-size: 14px; margin-top: 15px; opacity: 0.8;">
+                Pour toute question : Discord Neozia City Paris
+            </p>
+        </div>
+    </div>
+</body>
+</html>
